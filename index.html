@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Wave Effect Thanks to: https://www.youtube.com/watch?v=cxOaxNQVzrM-->
+    <div class="title-div">
+      <div id="title">
+        <h1>Vida na Água</h1>
+        <h2>Protegendo Nossos Oceanos para um Futuro Sustentável</h2>
+        <a id="start-btn" href="#nav-bar">Começar</a>
+      </div>
+
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+    </div>
+
+    <main>
+      <img src="img/dust.jpg" class="dust" />
+
+      <nav id="nav-bar">
+        <p>Vida na Água</p>
+        <div>
+          <a href="#section-1">Objetivo</a>
+          <a href="#section-2">A Importância dos Oceanos</a>
+          <a href="#section-3">Melhores Práticas para o Descarte de Lixo</a>
+          <a href="#section-4">Organizações</a>
+        </div>
+      </nav>
+
+      <section id="section-1">
+        <h3>Objetivo</h3>
+        <div class="video-div">
+          <iframe
+            width="840"
+            height="472.5"
+            src="https://www.youtube.com/embed/DvTyg4Q9p6w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a
+          id="youtube-link"
+          href="https://www.youtube.com/@UNCaboVerde"
+          target="_blank"
+        >
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+              />
+            </svg>
+            YOUTUBE • UN CABO VERDE
+          </p>
+          <a
+            class="link"
+            href="https://brasil.un.org/pt-br/sdgs/14"
+            target="_blank"
+            >Saiba mais sobre o objetivo 14</a
+          >
+        </a>
+      </section>
+
+      <section id="section-2" class="rows">
+        <div class="column">
+          <h3>A Importância dos Oceanos</h3>
+          <ul>
+            <li>
+              <b>Biodiversidade</b>
+              Os oceanos abrigam uma vasta quantidade de vida marinha, desde
+              pequenos organismos até gigantes baleias e tubarões. Essa
+              diversidade de espécies contribui para a resiliência dos
+              ecossistemas marinhos e é uma fonte potencial de novas descobertas
+              científicas e medicamentos.
+            </li>
+            <li>
+              <b>Regulação Climática</b>
+              Os oceanos desempenham um papel vital na regulação do clima
+              global, absorvendo grandes quantidades de dióxido de carbono (CO2)
+              da atmosfera. Eles atuam como um sumidouro de carbono, ajudando a
+              mitigar as mudanças climáticas.
+            </li>
+            <li>
+              <b>Produção de Oxigênio</b>
+              Mais de 50% do oxigênio que respiramos é produzido pelos oceanos
+              através do processo de fotossíntese realizado principalmente por
+              fitoplâncton.
+            </li>
+            <li>
+              <b>Ciclo Hidrológico</b>
+              Os oceanos são uma parte essencial do ciclo hidrológico, onde a
+              água evapora da superfície do oceano, forma nuvens e,
+              eventualmente, retorna à terra sob a forma de chuva, mantendo o
+              equilíbrio dos ecossistemas terrestres.
+            </li>
+            <li>
+              <b>Alimentação e Economia</b>
+              Milhões de pessoas dependem dos oceanos para sua subsistência. A
+              pesca e a aquicultura são fontes vitais de alimento e emprego para
+              comunidades em todo o mundo.
+            </li>
+            <li>
+              <b>Recreação e Turismo</b>
+              Os oceanos são destinos populares para turismo e lazer, oferecendo
+              atividades como natação, surf, mergulho e passeios de barco,
+              contribuindo para a economia local e o bem-estar dos turistas.
+            </li>
+            <li>
+              <b>Transporte e Comércio</b>
+              A maioria do comércio internacional é feita através do transporte
+              marítimo, o que torna os oceanos uma rota vital para o comércio
+              global.
+            </li>
+            <li>
+              <b>Fonte de Energia</b>
+              As energias renováveis, como a eólica offshore e a energia das
+              ondas, estão sendo cada vez mais exploradas como fontes limpas de
+              energia.
+            </li>
+          </ul>
+        </div>
+
+        <div class="column img-div">
+          <img
+            src="img/sea.png"
+            alt="imagem de uma tartaruga no fundo do mar"
+          />
+        </div>
+      </section>
+
+      <section id="section-3" class="rows">
+        <div class="column img-div">
+          <img src="img/ocean-trash.png" alt="lixo no fundo do oceano" />
+        </div>
+
+        <div class="column">
+          <h3>Melhores Práticas para o Descarte de Lixo</h3>
+
+          <ul>
+            <li>
+              <b>Reduzir, Reutilizar, Reciclar</b>
+              Priorize a redução do consumo de produtos descartáveis e promova a
+              reutilização de itens sempre que possível. Recicle materiais como
+              plástico, vidro e metal para evitar que eles cheguem aos oceanos.
+            </li>
+            <li>
+              <b>Descarte Responsável</b>
+              Certifique-se de que o lixo seja descartado corretamente em
+              lixeiras adequadas. Evite jogar lixo nas ruas, praias ou corpos
+              d'água, pois isso pode acabar sendo levado pelas chuvas para o
+              mar.
+            </li>
+            <li>
+              <b>Participe de Limpezas Costeiras</b>
+              Junte-se a iniciativas de limpeza de praias e costas. Essas ações
+              ajudam a remover resíduos sólidos antes que cheguem ao oceano,
+              protegendo a vida marinha e melhorando a experiência para os
+              visitantes.
+            </li>
+            <li>
+              <b>Evite Produtos com Microplásticos</b> Evite o uso de produtos
+              de cuidados pessoais que contenham microplásticos, pois essas
+              partículas podem acabar nos oceanos e serem ingeridas por animais
+              marinhos.
+            </li>
+            <li>
+              <b>Apoie Políticas de Conservação</b> Apoie e participe de
+              organizações e iniciativas que trabalham para a proteção dos
+              oceanos e da vida marinha. Acompanhe políticas governamentais
+              voltadas para a conservação marinha e faça sua voz ser ouvida.
+            </li>
+          </ul>
+          <p>
+            Pequenas ações individuais podem fazer uma grande diferença quando
+            se trata de proteger os oceanos e garantir a sustentabilidade de
+            nosso planeta para as gerações futuras.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-4">
+        <h3>
+          Organizações que trabalham para a limpeza e conservação dos oceanos
+        </h3>
+
+        <div>
+
+          <div class="ong-cards">
+            <img src="img/4ocean-logo.png" class="logo-img" alt="" />
+            <a class="link" href="https://www.4ocean.com" target="_blank"
+              >4Ocean</a
+            >
+            <p>
+              A 4Ocean é uma organização que visa combater a poluição marinha,
+              especialmente os plásticos, por meio da realização de limpezas
+              costeiras e da fabricação de pulseiras feitas de materiais
+              reciclados. Parte do dinheiro arrecadado com a venda das pulseiras
+              é destinado para financiar a retirada de lixo dos oceanos.
+            </p>
+          </div>
+
+          <div class="ong-cards">
+            <img src="img/the-ocean-cleanup-logo.png" class="logo-img" alt="" />
+            <a class="link" href="https://theoceancleanup.com" target="_blank"
+              >The Ocean Cleanup</a
+            >
+            <p>
+              Fundada por Boyan Slat, a The Ocean Cleanup é uma organização que
+              tem como objetivo desenvolver tecnologias avançadas para remover
+              plásticos e outros resíduos dos oceanos. Eles projetam sistemas de
+              limpeza autônomos que utilizam correntes marítimas para capturar
+              resíduos plásticos.
+            </p>
+          </div>
+
+          <div class="ong-cards">
+            <img
+              src="img/ocean-conservancy-logo.png"
+              class="logo-img"
+              class="logo-img"
+              alt=""
+            />
+            <a class="link" href="https://oceanconservancy.org" target="_blank"
+              >Ocean Conservancy</a
+            >
+            <p>
+              A Ocean Conservancy é uma organização sem fins lucrativos que se
+              dedica a proteger os oceanos e a vida marinha. Eles lideram
+              iniciativas de limpeza costeira, advocacia e educação para
+              combater a poluição marinha e promover práticas sustentáveis de
+              conservação.
+            </p>
+          </div>
+
+          <div class="ong-cards">
+            <img
+              src="img/surfrider-foundation-logo.png"
+              class="logo-img"
+              alt=""
+            />
+            <a class="link" href="https://www.surfrider.org" target="_blank"
+              >Surfrider Foundation</a
+            >
+            <p>
+              A Surfrider Foundation é uma organização com atuação global que se
+              concentra na proteção e preservação das praias e oceanos. Eles
+              trabalham para reduzir a poluição costeira, defender a legislação
+              em favor do meio ambiente e promover a conscientização sobre os
+              problemas enfrentados pelos oceanos.
+            </p>
+          </div>
+
+          
+        </div>
+      </section>
+
+      
+    </main>
+  </body>
+</html>
