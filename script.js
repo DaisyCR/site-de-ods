@@ -15,6 +15,8 @@ const backToTop = () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
+//Scroll animation Thanks to: https://www.youtube.com/watch?v=T33NN_pPeNI
+//Add class when entry intersects with observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     entry.isIntersecting
