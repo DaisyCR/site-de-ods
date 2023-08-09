@@ -1,18 +1,13 @@
-window.onscroll = function() {myFunction()};
+let navbar = document.getElementById("nav-bar");
+let sticky = navbar.offsetTop;
 
-var navbar = document.getElementById("nav-bar");
-var sticky = navbar.offsetTop;
-let mybutton = document.getElementById("back-to-top-btn");
-
-function myFunction() {
-    if (window.scrollY >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
+//Add class to keep navbar stuck on top after scrolling past it
+window.onscroll = () => {
+  (window.scrollY >= sticky) ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
-function topFunction() {
+//Return to the start of the page
+backToTop = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
