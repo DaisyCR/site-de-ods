@@ -51,6 +51,45 @@ body {
     color: var(--dark-cyan);
 }
 
+/*Scroll animation Thanks to: https://www.youtube.com/watch?v=T33NN_pPeNI*/
+
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.no-motion {
+    transition: all 2s;
+    transform: none;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
+
+.ong-cards:nth-child(2){
+    transition-delay: 300ms;
+}
+
+.ong-cards:nth-child(3){
+    transition-delay: 500ms;
+}
+
+.ong-cards:nth-child(4){
+    transition-delay: 700ms;
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 
 /* Wave Effect Thanks to: https://www.youtube.com/watch?v=cxOaxNQVzrM */
 /*/////////////////////////////////// TITLE //////////////////////////////////*/
@@ -189,6 +228,7 @@ h2 {
 
 .sticky {
     position: sticky;
+    z-index: 3000;
     top: 0;
 }
 
