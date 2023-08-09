@@ -7,18 +7,20 @@
     <script src="script.js" defer></script>
     <title>Vida na Água</title>
   </head>
+
   <body>
     <!-- Wave Effect Thanks to: https://www.youtube.com/watch?v=cxOaxNQVzrM-->
     <div class="title-div">
       <div id="title">
         <h1>
-          Vida na Água
-          <!--Fish SVG-->
+          VIDA NA ÁGUA
           <svg
+            id="logo-fish-icon"
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
             viewBox="0 0 576 512"
           >
+            <title>Logo</title>
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M327.1 96c-89.97 0-168.54 54.77-212.27 101.63L27.5 131.58c-12.13-9.18-30.24.6-27.14 14.66L24.54 256 .35 365.77c-3.1 14.06 15.01 23.83 27.14 14.66l87.33-66.05C158.55 361.23 237.13 416 327.1 416 464.56 416 576 288 576 256S464.56 96 327.1 96zm87.43 184c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24 13.26 0 24 10.74 24 24 0 13.25-10.75 24-24 24z"
@@ -26,7 +28,7 @@
           </svg>
         </h1>
         <h2>Protegendo nossos oceanos para um futuro sustentável</h2>
-        <a id="start-btn" href="#nav-bar">Começar</a>
+        <a class="btn" id="start-btn" href="#navbar">COMEÇAR</a>
       </div>
 
       <div class="waves">
@@ -38,25 +40,28 @@
     </div>
 
     <main>
-      <img src="img/dust.jpg" class="dust" />
+      <img src="img/dust.jpg" id="dust-bg" />
 
-      <nav id="nav-bar">
-        <!--Fish SVG-->
+      <nav id="navbar">
         <svg
+          id="navbar-fish-icon"
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
           viewBox="0 0 576 512"
         >
+          <title>Logo</title>
           <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
           <path
             d="M327.1 96c-89.97 0-168.54 54.77-212.27 101.63L27.5 131.58c-12.13-9.18-30.24.6-27.14 14.66L24.54 256 .35 365.77c-3.1 14.06 15.01 23.83 27.14 14.66l87.33-66.05C158.55 361.23 237.13 416 327.1 416 464.56 416 576 288 576 256S464.56 96 327.1 96zm87.43 184c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24 13.26 0 24 10.74 24 24 0 13.25-10.75 24-24 24z"
           />
         </svg>
-        <div>
-          <a href="#section-1">Objetivo</a>
-          <a href="#section-2">A Importância dos Oceanos</a>
-          <a href="#section-3">Melhores Práticas para o Descarte de Lixo</a>
-          <a href="#section-4">Organizações</a>
+        <div id="navbar-links">
+          <a class="hover" href="#section-1">Objetivo</a>
+          <a class="hover" href="#section-2">A Importância dos Oceanos</a>
+          <a class="hover" href="#section-3"
+            >Melhores Práticas para o Descarte de Lixo</a
+          >
+          <a class="hover" href="#section-4">Organizações</a>
         </div>
       </nav>
 
@@ -75,29 +80,37 @@
         </div>
         <a
           id="youtube-link"
+          class="hover"
           href="https://www.youtube.com/@UNCaboVerde"
           target="_blank"
         >
-          <p>
-            <!--Youtube Logo SVG-->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-              <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-              />
+          <p id="video-link">
+            <svg
+              id="youtube-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <title>Youtube</title>
+              <g id="youtube-icon">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                />
+              </g>
             </svg>
             YOUTUBE • UN CABO VERDE
           </p>
-          <a
-            class="link"
-            href="https://brasil.un.org/pt-br/sdgs/14"
-            target="_blank"
-            >Saiba mais sobre o objetivo 14</a
-          >
         </a>
+        <a
+          id="obs-link"
+          class="btn"
+          href="https://brasil.un.org/pt-br/sdgs/14"
+          target="_blank"
+          >Saiba mais sobre o objetivo 14</a
+        >
       </section>
 
-      <section id="section-2" class="rows">
+      <section id="section-2" class="row">
         <div class="column">
           <h3>A Importância dos Oceanos</h3>
           <ul class="main-text">
@@ -164,7 +177,7 @@
         </div>
       </section>
 
-      <section id="section-3" class="rows">
+      <section id="section-3" class="row">
         <div class="column img-div">
           <img src="img/ocean-trash.png" alt="lixo no fundo do oceano" />
         </div>
@@ -221,11 +234,11 @@
 
         <div id="ongs-div">
           <div class="ong-cards">
-            <img src="img/4ocean-logo.png" class="logo-img" alt="" />
-            <a class="link" href="https://www.4ocean.com" target="_blank"
+            <img src="img/4ocean-logo.png" class="ong-img" alt="" />
+            <a class="btn ong-link" href="https://www.4ocean.com" target="_blank"
               >4Ocean</a
             >
-            <p>
+            <p class="ong-description">
               A 4Ocean é uma organização que visa combater a poluição marinha,
               especialmente os plásticos, por meio da realização de limpezas
               costeiras e da fabricação de pulseiras feitas de materiais
@@ -235,11 +248,11 @@
           </div>
 
           <div class="ong-cards">
-            <img src="img/the-ocean-cleanup-logo.png" class="logo-img" alt="" />
-            <a class="link" href="https://theoceancleanup.com" target="_blank"
+            <img src="img/the-ocean-cleanup-logo.png" class="ong-img" alt="" />
+            <a class="btn ong-link" href="https://theoceancleanup.com" target="_blank"
               >The Ocean Cleanup</a
             >
-            <p>
+            <p class="ong-description">
               Fundada por Boyan Slat, a The Ocean Cleanup é uma organização que
               tem como objetivo desenvolver tecnologias avançadas para remover
               plásticos e outros resíduos dos oceanos. Eles projetam sistemas de
@@ -251,14 +264,13 @@
           <div class="ong-cards">
             <img
               src="img/ocean-conservancy-logo.png"
-              class="logo-img"
-              class="logo-img"
+              class="ong-img"
               alt=""
             />
-            <a class="link" href="https://oceanconservancy.org" target="_blank"
+            <a class="btn ong-link" href="https://oceanconservancy.org" target="_blank"
               >Ocean Conservancy</a
             >
-            <p>
+            <p class="ong-description">
               A Ocean Conservancy é uma organização sem fins lucrativos que se
               dedica a proteger os oceanos e a vida marinha. Eles lideram
               iniciativas de limpeza costeira, advocacia e educação para
@@ -270,13 +282,13 @@
           <div class="ong-cards">
             <img
               src="img/surfrider-foundation-logo.png"
-              class="logo-img"
+              class="ong-img"
               alt=""
             />
-            <a class="link" href="https://www.surfrider.org" target="_blank"
+            <a class="btn ong-link" href="https://www.surfrider.org" target="_blank"
               >Surfrider Foundation</a
             >
-            <p>
+            <p class="ong-description">
               A Surfrider Foundation é uma organização com atuação global que se
               concentra na proteção e preservação das praias e oceanos. Eles
               trabalham para reduzir a poluição costeira, defender a legislação
@@ -288,7 +300,7 @@
       </section>
 
       <footer>
-        <div id="start-div">
+        <div id="top-div">
           <div id="info-div">
             <p class="footer-title">Lorem ipsum</p>
             <p>
@@ -301,22 +313,25 @@
 
           <div id="author-div">
             <ul>
-              <li>
+              <li class="hover">
                 <a href="https://github.com/DaisyCR" target="_blank"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
                     viewBox="0 0 496 512"
                   >
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                    />
+                    <title>Github</title>
+                    <g id="github-icon">
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      />
+                    </g>
                   </svg>
                   Github</a
                 >
               </li>
-              <li>
+              <li class="hover">
                 <a href="mailto:daisy.cerqueira.reis@gmail.com" target="_blank"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -326,15 +341,20 @@
                     class="bi bi-envelope-fill"
                     viewBox="0 0 16 16"
                   >
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-                    />
+                    <title>Email</title>
+                    <g id="email-icon">
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                      />
+                    </g>
                   </svg>
                   Email</a
                 >
               </li>
-              <li>
-                <a href="https://www.linkedin.com/in/daisy-cerqueira-reis/" target="_blank"
+              <li class="hover">
+                <a
+                  href="https://www.linkedin.com/in/daisy-cerqueira-reis/"
+                  target="_blank"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -343,9 +363,12 @@
                     class="bi bi-linkedin"
                     viewBox="0 0 16 16"
                   >
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                    />
+                    <title>Linkedin</title>
+                    <g id="linkedin-icon">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      />
+                    </g>
                   </svg>
                   Linkedin</a
                 >
@@ -353,9 +376,9 @@
             </ul>
           </div>
 
-          <div id="reference-div">
+          <div id="credits-div">
             <p class="footer-title">Créditos</p>
-            <div id="reference-info">
+            <div id="credits-info">
               <ul>
                 <li>Logo</li>
                 <li>Vídeo</li>
@@ -378,9 +401,10 @@
           </div>
         </div>
 
-        <div id="end-div">
+        <div id="bottom-div">
           <p>©2023 Daisy Reis</p>
           <button
+            class="btn"
             onclick="backToTop()"
             id="back-to-top-btn"
             title="Voltar ao Inicio"

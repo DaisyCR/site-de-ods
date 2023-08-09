@@ -1,4 +1,4 @@
-let navbar = document.getElementById("nav-bar");
+let navbar = document.getElementById("navbar");
 let sticky = navbar.offsetTop;
 
 //Add class to keep navbar stuck on top after scrolling past it
