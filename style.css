@@ -412,7 +412,7 @@ iframe {
 #author-div {
     grid-area: 2 / 1 / 3 / 2;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-bottom: 1em;
 }
 
